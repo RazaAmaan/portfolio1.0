@@ -10,38 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <style>
-        /* Sliding background for Hire Me button */
-        .hire-me-container {
-            position: relative;
-            overflow: hidden;
-            display: inline-block;
-        }
-        .hire-me-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 400%;
-            height: 100%;
-            background: url('https://sl.bing.net/hShLcU1wINM') 0 0,
-                        url('https://via.placeholder.com/150/326ce5/ffffff?text=Kubernetes') 25% 0,
-                        url('https://via.placeholder.com/150/ff9900/ffffff?text=Docker') 50% 0,
-                        url('https://via.placeholder.com/150/00ff00/ffffff?text=Terraform') 75% 0;
-            background-size: 25% 100%;
-            background-repeat: no-repeat;
-            animation: slideImages 12s linear infinite;
-            opacity: 0.3;
-            z-index: -1;
-        }
-        @keyframes slideImages {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-25%); }
-        }
-        .hire-me-btn {
-            position: relative;
-            z-index: 1;
-        }
-    </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- Dark Mode Toggle -->
@@ -90,10 +58,7 @@
             <p class="mt-6 text-lg text-gray-200 max-w-2xl mx-auto">
                 DevOps Engineer with 3+ years of experience in optimizing cloud infrastructure, CI/CD pipelines, and Kubernetes clusters. Skilled in AWS, Terraform, and ensuring high availability.
             </p>
-            <div class="hire-me-container mt-8">
-                <div class="hire-me-bg"></div>
-                <a href="#contact" class="hire-me-btn inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Hire Me</a>
-            </div>
+            <a href="#contact" class="mt-8 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Hire Me</a>
         </div>
     </section>
 
@@ -103,7 +68,7 @@
             <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-6 md:mb-0">
-                    <img src="<img src="portfolio1.0/WhatsApp Image 2025-07-03 at 18.07.10-removebg-preview (1).jpg" alt="Amaan Raza" class="rounded-full w-64 h-64 mx-auto object-cover">" alt="Amaan Raza" class="rounded-full w-64 h-64 mx-auto object-cover">" alt="Amaan Raza" class="rounded-full w-64 h-64 mx-auto object-cover">
+                    <img src="portfolio1.0/WhatsApp Image 2025-07-03 at 18.07.10-removebg-preview (1).jpg" alt="Amaan Raza" class="rounded-full w-64 h-64 mx-auto object-cover">
                 </div>
                 <div class="md:w-2/3 md:pl-8">
                     <h3 class="text-2xl font-semibold">I'm Amaan Raza, a <span class="typing-2 text-blue-600"></span></h3>
