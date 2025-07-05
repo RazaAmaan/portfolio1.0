@@ -10,6 +10,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <style>
+        /* Sliding background for Hire Me button */
+        .hire-me-container {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .hire-me-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 400%;
+            height: 100%;
+            background: url('https://via.placeholder.com/150/1a73e8/ffffff?text=AWS') 0 0,
+                        url('https://via.placeholder.com/150/326ce5/ffffff?text=Kubernetes') 25% 0,
+                        url('https://via.placeholder.com/150/ff9900/ffffff?text=Docker') 50% 0,
+                        url('https://via.placeholder.com/150/00ff00/ffffff?text=Terraform') 75% 0;
+            background-size: 25% 100%;
+            background-repeat: no-repeat;
+            animation: slideImages 12s linear infinite;
+            opacity: 0.3;
+            z-index: -1;
+        }
+        @keyframes slideImages {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-25%); }
+        }
+        .hire-me-btn {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- Dark Mode Toggle -->
@@ -58,7 +90,10 @@
             <p class="mt-6 text-lg text-gray-200 max-w-2xl mx-auto">
                 DevOps Engineer with 3+ years of experience in optimizing cloud infrastructure, CI/CD pipelines, and Kubernetes clusters. Skilled in AWS, Terraform, and ensuring high availability.
             </p>
-            <a href="#contact" class="mt-8 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Hire Me</a>
+            <div class="hire-me-container mt-8">
+                <div class="hire-me-bg"></div>
+                <a href="#contact" class="hire-me-btn inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">Hire Me</a>
+            </div>
         </div>
     </section>
 
