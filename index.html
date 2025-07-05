@@ -11,41 +11,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
-    <!-- Dark Mode Toggle -->
-    <button id="theme-toggle" class="fixed top-4 right-4 p-2 bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 rounded-full z-50">
-        <i class="fas fa-moon"></i>
-    </button>
-
+<body class="bg-gray-100 text-gray-900">
     <!-- Navbar -->
-    <nav class="sticky top-0 bg-white dark:bg-gray-800 shadow-md z-40">
+    <nav class="sticky top-0 bg-white shadow-md z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <div class="text-2xl font-bold">Portfo<span class="text-blue-600">lio.</span></div>
                 </div>
                 <div class="hidden md:flex items-center space-x-4">
-                    <a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">Home</a>
-                    <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">About</a>
-                    <a href="#experience" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">Experience</a>
-                    <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">Projects</a>
-                    <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">Skills</a>
-                    <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-blue-600">Contact</a>
+                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600">Experience</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600">Skills</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="menu-toggle" class="text-gray-700 dark:text-gray-300">
+                    <button id="menu-toggle" class="text-gray-700">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800">
-                <a href="#home" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600">Home</a>
-                <a href="#about" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600">About</a>
-                <a href="#experience" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600">Experience</a>
-                <a href="#projects" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600">Projects</a>
-                <a href="#skills" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600">Skills</a>
-                <a href="#contact" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600">Contact</a>
+            <div id="mobile-menu" class="hidden md:hidden bg-white">
+                <a href="#home" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="block px-4 py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="#experience" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Experience</a>
+                <a href="#projects" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="#skills" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Skills</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:text-blue-600">Contact</a>
             </div>
         </div>
     </nav>
@@ -69,11 +64,10 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-6 md:mb-0">
                     <img src="pfp.jpg" alt="Amaan Raza" class="rounded-full w-64 h-64 mx-auto object-cover">
-
                 </div>
                 <div class="md:w-2/3 md:pl-8">
                     <h3 class="text-2xl font-semibold">I'm Amaan Raza, a <span class="typing-2 text-blue-600"></span></h3>
-                    <p class="mt-4 text-gray-700 dark:text-gray-300">
+                    <p class="mt-4 text-gray-700">
                         DevOps Engineer with 3+ years of experience in optimizing cloud infrastructure, CI/CD pipelines, and Kubernetes clusters. Skilled in AWS resources, Terraform automation, and ensuring high availability across multiple environments. Adept at managing CI/CD pipelines and implementing advanced API management solutions. Focused on delivering efficient, scalable solutions while fostering collaboration and continuous improvement in DevOps practices.
                     </p>
                     <a href="Amaanraza_SeniorDevOpsEngineer_Resume.pdf" class="mt-4 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Download Resume</a>
@@ -83,28 +77,31 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-16 bg-gray-200 dark:bg-gray-800">
+    <section id="experience" class="py-16 bg-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
             <div class="space-y-8">
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold">Senior DevOps Engineer, Protiviti, Gurgaon</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Jul 2025 – Present</p>
-                    <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300">
+                    <p class="text-gray-600">Jul 2025 – Present</p>
+                    <ul class="mt-4 list-disc list-inside text-gray-700">
                         <li>Automated CI/CD pipelines in Jenkins using Playwright and Robot Framework, reducing test execution time by 90% through parallelism.</li>
                         <li>Created Jenkins pipelines to deploy AWS resources (EC2, S3) using Terraform, with a shared library structure for Declarative Pipelines.</li>
                     </ul>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-semibold">DevOps Engineer, Protiviti, Gurgaon</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Jul 2022 – Jun 2025</p>
-                    <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300">
+                    <p class="text-gray-600">Jul 2022 – Jun 2025</p>
+                    <ul class="mt-4 list-disc list-inside text-gray-700">
                         <li>Managed 50+ microservices across Dev, QA, UAT, and RC environments with Canary Deployments for safe feature rollouts.</li>
                         <li>Deployed AWS infrastructure (EC2, S3, EKS) using Terraform and AWS console, saving 25% deployment time with Shell scripts.</li>
                         <li>Automated EKS/AMI upgrades (v1.26–v1.32), resolving CNI and PVC issues, and created separate node groups for Dev, QA, UAT.</li>
                         <li>Developed Python scripts for snapshot removal and version updates for 50+ microservices, automating tedious manual tasks.</li>
                         <li>Built Groovy pipeline scripts for Jenkins Shared Library, improving CI/CD flexibility by 20%.</li>
                         <li>Reduced AWS compute costs by 24% using ASGs and ARM64 migration.</li>
+                        <li>Designed and implemented CI/CD pipelines using Jenkins, reducing deployment time by 40% through automation of code compilation, testing, and deployment processes.</li>
+                        <li>Built an automated branch cleanup script (Shell Script) for 40+ microservices, monitoring branch counts across 15+ services and sending Slack alerts when thresholds exceeded, eliminating the need for manual cleanup of excessive branches.</li>
+                        <li>Monitored Kubernetes clusters using Prometheus and Grafana, setting up basic dashboards for resource usage tracking.</li>
                     </ul>
                 </div>
             </div>
@@ -116,50 +113,40 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold">CI/CD Pipeline Automation</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Jenkins, Playwright, Robot Framework</p>
-                    <p class="mt-2 text-gray-700 dark:text-gray-300">Automated testing CI/CD pipelines, reducing test execution time by 90% through parallelism and shared library structures.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Board Game Web Application</h3>
+                    <p class="text-gray-600">AWS, Docker, Kubernetes, Jenkins, Git, SonarQube, Trivy, Nexus</p>
+                    <p class="mt-2 text-gray-700">Developed a web application to display lists of board games and their reviews. Users can view games and reviews publicly, but require login to add or edit content. Implemented using DevOps methodologies with a comprehensive CI/CD pipeline to host the application, ensuring secure and efficient deployments.</p>
                 </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold">AWS Infrastructure Deployment</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Terraform, AWS, Jenkins</p>
-                    <p class="mt-2 text-gray-700 dark:text-gray-300">Built Jenkins pipelines to deploy AWS resources (EC2, S3) using Terraform, streamlining infrastructure provisioning.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold">EKS Cluster Management</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Kubernetes, EKS, Terraform</p>
-                    <p class="mt-2 text-gray-700 dark:text-gray-300">Created separate EKS node groups for Dev, QA, and UAT, resolving CNI/PVC issues and ensuring zero downtime.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold">Microservices Automation</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Python, Shell, Jenkins</p>
-                    <p class="mt-2 text-gray-700 dark:text-gray-300">Developed Python and Shell scripts to automate snapshot removal, version updates, and branch cleanup for 50+ microservices.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold">Jarwis Chatbot</h3>
+                    <p class="text-gray-600">Python, Flask, NLTK, Jenkins, Docker</p>
+                    <p class="mt-2 text-gray-700">Built a chatbot named Jarwis using Python with Flask for the backend and NLTK for natural language processing. Integrated with Jenkins and Docker to automate deployment pipelines, ensuring scalability and seamless updates for the chatbot application.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-200 dark:bg-gray-800">
+    <section id="skills" class="py-16 bg-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">AWS</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Terraform</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Kubernetes</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Docker</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Jenkins</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Groovy</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Python</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Shell Scripting</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Git</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Bitbucket</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Prometheus</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Grafana</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Azure</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Gradle</div>
-                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md text-center">Maven</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">AWS</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Terraform</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Kubernetes</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Docker</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Jenkins</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Groovy</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Python</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Shell Scripting</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Git</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Bitbucket</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Prometheus</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Grafana</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Azure</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Gradle</div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">Maven</div>
             </div>
         </div>
     </section>
@@ -171,7 +158,7 @@
             <div class="flex flex-col md:flex-row">
                 <div class="md:w-1/2 mb-6 md:mb-0">
                     <h3 class="text-xl font-semibold">Get in Touch</h3>
-                    <p class="mt-2 text-gray-700 dark:text-gray-300">Feel free to reach out for collaboration or opportunities!</p>
+                    <p class="mt-2 text-gray-700">Feel free to reach out for collaboration or opportunities!</p>
                     <div class="mt-4 space-y-4">
                         <div class="flex items-center">
                             <i class="fas fa-user mr-2"></i>
@@ -199,16 +186,16 @@
                     <h3 class="text-xl font-semibold">Message Me</h3>
                     <form action="https://formspree.io/f/manjzeyv" method="POST" class="mt-4 space-y-4">
                         <div class="flex flex-col">
-                            <input type="text" name="name" placeholder="Name" class="p-3 rounded-lg border dark:bg-gray-700 dark:border-gray-600" required>
+                            <input type="text" name="name" placeholder="Name" class="p-3 rounded-lg border" required>
                         </div>
                         <div class="flex flex-col">
-                            <input type="email" name="email" placeholder="Email" class="p-3 rounded-lg border dark:bg-gray-700 dark:border-gray-600" required>
+                            <input type="email" name="email" placeholder="Email" class="p-3 rounded-lg border" required>
                         </div>
                         <div class="flex flex-col">
-                            <input type="text" name="subject" placeholder="Subject" class="p-3 rounded-lg border dark:bg-gray-700 dark:border-gray-600" required>
+                            <input type="text" name="subject" placeholder="Subject" class="p-3 rounded-lg border" required>
                         </div>
                         <div class="flex flex-col">
-                            <textarea name="message" placeholder="Message" rows="5" class="p-3 rounded-lg border dark:bg-gray-700 dark:border-gray-600" required></textarea>
+                            <textarea name="message" placeholder="Message" rows="5" class="p-3 rounded-lg border" required></textarea>
                         </div>
                         <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Send Message</button>
                     </form>
